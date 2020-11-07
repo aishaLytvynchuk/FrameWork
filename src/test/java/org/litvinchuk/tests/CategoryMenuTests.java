@@ -22,10 +22,6 @@ public class CategoryMenuTests extends BaseTest {
                 .selectFromCategoryMenu(menuItems);
 
         Assert.assertEquals(new BasePage().getPageTitle(), menuItems);
-
-//        Assert.assertEquals(new CategoryMenu().getTextFromCategoryMenuItem(), new BasePage().getPageTitle());
-//        Assert.assertEquals(new CategoryMenu().getTextFromCategorySublistMenuItem(), new BasePage().getPageTitle());
-
     }
 
     @DataProvider(name = "ComponentMenuDataProvider")
@@ -36,15 +32,15 @@ public class CategoryMenuTests extends BaseTest {
                         {"Computers", "Desktops"},
                         {"Computers", "Notebooks"},
                         {"Computers", "Software"},
-//                        {"Electronics"},
-//                        {"Electronics", "Camera & photo "},
-//                        {"Electronics", "Cell phones "},
-//                        {"Electronics", "Others "},
-//                        {"Apparel"},
-//                        {"Digital downloads"},
-//                        {"Books"},
-//                        {"Jewelry"},
-//                        {"Gift Cards"},
+                        {"Electronics"},
+                        {"Electronics", "Camera & photo "},
+                        {"Electronics", "Cell phones "},
+                        {"Electronics", "Others "},
+                        {"Apparel"},
+                        {"Digital downloads"},
+                        {"Books"},
+                        {"Jewelry"},
+                        {"Gift Cards"},
                 };
     }
 

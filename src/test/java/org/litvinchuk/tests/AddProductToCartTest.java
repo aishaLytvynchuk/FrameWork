@@ -17,11 +17,6 @@ public class AddProductToCartTest extends BaseTest {
     public void beforeAddProductToCartTestClass() {
         goToUrl(ApplicationConstants.PRODUCT_PAGE);
         loginAsRegularUser();
-//        new HeaderMenu().clickMenuItem(HeaderMenuItem.LOGIN);
-//        new LoginPage()
-//                .login(configProperties.validEmail(),
-//                        configProperties.validPassword(),
-//                        ProductPage.class);
     }
 
     @AfterClass

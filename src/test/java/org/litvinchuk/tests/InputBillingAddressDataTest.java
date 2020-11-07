@@ -16,7 +16,6 @@ import java.util.Map;
 
 public class InputBillingAddressDataTest extends BaseTest {
 
-
     @BeforeClass
     public void beforeInputBillingAddressDataTestClass() {
         clearAllCookies();

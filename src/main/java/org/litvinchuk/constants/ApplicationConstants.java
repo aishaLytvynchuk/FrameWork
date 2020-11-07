@@ -10,10 +10,4 @@ public class ApplicationConstants {
     public static final String CHECKOUT_PAGE = APP_URL + "/onepagecheckout#opc-billing";
 
     public static final File downloadsFolder = new File("downloads");
-
-
-
-
-
-
 }

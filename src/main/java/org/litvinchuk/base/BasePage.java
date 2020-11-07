@@ -14,9 +14,6 @@ public class BasePage {
     private HeaderMenu headerMenu;
     private CategoryMenu categoryMenu;
     private CurrencySelectComponent currencySelectComponent;
-//    private SearchComponent searchComponent;
-//    private LogoComponent logoComponent;
-
 
     public BasePage() {
         PageFactory.initElements(WebDriverHolder.getInstance().getDriver(), this);
@@ -43,13 +40,6 @@ public class BasePage {
         searchInput.sendKeys(searchParameter);
         searchButton.submit();
     }
-
-//    public LogoComponent getLogoComponent() {
-//        return logoComponent;
-//    }
-
-
-
 
     public static void clickLogo() {
         logger.info("Click on logo component");

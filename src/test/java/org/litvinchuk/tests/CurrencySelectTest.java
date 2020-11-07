@@ -10,9 +10,6 @@ import org.testng.annotations.Test;
 
 public class CurrencySelectTest extends BaseTest {
 
-//    String currencySymbol
-
-
     @BeforeClass
     public void beforeCurrencySelectTestClass() {
         goToUrl(ApplicationConstants.APP_URL);

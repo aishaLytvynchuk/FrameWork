@@ -49,17 +49,6 @@ public class HeaderMenu {
         getMenuItem(menuItem).click();
     }
 
-
-    //    public LoginPage selectLoginMenuItem() {
-//        loginMenuItem.click();
-//        return new LoginPage();
-//    }
-//
-//    public BasePage selectLogoutMenuItem() {
-//        logoutMenuItem.click();
-//        return new BasePage();
-//    }
-
     public boolean isLoginSuccessful() {
         try {
             logger.info("Checking if logoutMenuItem is visible!");

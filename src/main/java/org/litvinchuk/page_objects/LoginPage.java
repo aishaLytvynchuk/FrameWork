@@ -60,17 +60,4 @@ public class LoginPage extends BasePage {
             return false;
         }
     }
-
-//    public String getMessageErrorText() {
-//        logger.info("Get text from error message");
-//        WebDriverHolder.getInstance().getDriver()
-//                .findElement(By.xpath("//*[contains(@class,'message-error validation-summary-errors')]"));
-//        return messageError.getText();
-//    }
-//
-//    public String getEmailErrorMessageText() {
-//        logger.info("Get text from error message");
-//        WebDriverHolder.getInstance().getDriver().findElement(By.id("Email-error"));
-//        return emailErrorMessage.getText();
-//    }
 }

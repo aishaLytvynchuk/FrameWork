@@ -33,7 +33,6 @@ public class WishlistTests extends BaseTest {
         new WishlistPage().removeFromWishlist();
 
         Assert.assertTrue(new WishlistPage().isNoDataNotificationVisible());
-//        Assert.assertEquals(new WishlistPage().getNoDataText(), "The wishlist is empty!");
         Assert.assertTrue(new WishlistPage().getNoDataText().contains("The wishlist is empty!"));
     }
 }

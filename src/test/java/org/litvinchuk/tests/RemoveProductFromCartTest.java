@@ -26,13 +26,6 @@ public class RemoveProductFromCartTest extends BaseTest {
 
     @Test
     public void removeProductFromCartTest() {
-//        ProductPage productPage = new ProductPage();
-//        productPage.addToCart();
-//        new BasePage().getHeaderMenu().clickMenuItem(HeaderMenuItem.CART);
-//        CartPage cartPage = new CartPage();
-//        cartPage.removeProduct();
-//        Assert.assertTrue(cartPage.isCartEmpty());
-
         new ProductPage().addToCart();
 
         new HeaderMenu().clickMenuItem(HeaderMenuItem.CART);

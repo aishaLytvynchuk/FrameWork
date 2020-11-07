@@ -23,13 +23,6 @@ public class CurrencySelectComponent {
     public String getSelectedOptionText() {
         logger.info("Getting text from selected option...");
 
-//        WebElement element = WebDriverHolder.getInstance().getDriver()
-//                .findElement(By.id("customerCurrency"));
-//        Select select = new Select(element);
-//        select.getFirstSelectedOption();
-//        String selectedOption = element.getText();
-//        return selectedOption;
-
         WebElement element = WebDriverHolder.getInstance().getDriver()
                 .findElement(By.id("customerCurrency"));
         Select select = new Select(element);

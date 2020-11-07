@@ -76,37 +76,4 @@ public class ProductPage extends BasePage {
         return title.getText();
     }
 
-
-
-
-//    public String getSearchedProduct() {
-//        logger.info("Get searched products");
-//
-//        List<String> elements = Collections.singletonList(ProductPage.getProductTitleTex());
-//
-//            for (String elementOfList: elements) {
-//                if()
-//                return elementOfList;
-//            }
-//        return null;
-//    }
-
-//    public boolean isBarNotificationVisible() {
-//        try {
-//            logger.info("Checking if notification is visible!");
-//            WebDriverHolder.getInstance().getDriver();
-//            waitForVisibilityOfElement(barNotification);
-//            return barNotification .isDisplayed();
-//        } catch (Exception e) {
-//            return false;
-//        }
-//    }
-//
-//    public String getSuccessBarNotificationText() {
-//        waitForVisibilityOfElement(successNotification);
-//        return WebDriverHolder.getInstance().getDriver()
-//                .findElement(By.xpath("//*[@class,'content']")
-//                .getText();
-//    }
-
 }

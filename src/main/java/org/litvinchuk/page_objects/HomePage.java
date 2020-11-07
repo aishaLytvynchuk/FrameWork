@@ -15,10 +15,6 @@ public class HomePage extends BasePage {
     @FindBy(className = "topic-block-title")
     private WebElement topicTitle;
 
-//    @FindBy(xpath = ".//div[@class='prices']/span")
-//    private WebElement actualPrice;
-
-
     public boolean isImageSliderVisible() {
         try {
             logger.info("Check is imageSlider visible!");
@@ -32,27 +28,5 @@ public class HomePage extends BasePage {
         logger.info("Get text from title");
         return topicTitle.getText();
     }
-
-
-
-//    public String getSymbolFromActualPrice() {
-//        logger.info("Get symbol from actual price");
-//        WebElement element = WebDriverHolder.getInstance().getDriver()
-//                .findElement(By.xpath(".//div[@class='prices']/span"));
-//        HashMap<String, String> map = new HashMap<String, String>();
-//        map.put("US Dollar","$");
-//        map.put("Euro","€");
-//
-//        for (Map.Entry<String, String> pair : map.entrySet()) {
-//            return pair.getKey();
-//        }
-//        return element.getText();
-//    }
-
-//    public String getSymbolFromActualPrice() {
-//        Set<Currency> currencies = Currency.getAvailableCurrencies();
-//        String symbol = actualPrice.toString();
-//        return currencies.stream().findFirst().map(Currency::getSymbol).orElse(null);
-//    }
 
 }

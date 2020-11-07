@@ -23,12 +23,6 @@ public class UnsuccessfulLoginTest extends BaseTest {
                 .login(email, password, LoginPage.class);
 
         Assert.assertTrue(new LoginPage().isErrorMessageVisible(errorMessage));
-
-
-        //        Assert.assertTrue(loginPage.getEmailErrorMessageText()
-//                .contains(configProperties.emailErrorMessage()));
-//        Assert.assertTrue(loginPage.getMessageErrorText()
-//                .contains(configProperties.credentialsMessageError()));
     }
 
 

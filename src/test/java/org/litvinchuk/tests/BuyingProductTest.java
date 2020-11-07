@@ -56,51 +56,25 @@ public class BuyingProductTest extends BaseTest {
         billingNewAddressInputs.put("BillingNewAddress_ZipPostalCode", configProperties.postalCode());
         billingNewAddressInputs.put("BillingNewAddress_PhoneNumber", configProperties.phoneNumber());
         billingNewAddressInputs.put("BillingNewAddress_FaxNumber", configProperties.faxNumber());
+
         for (Map.Entry<String, String> pair : billingNewAddressInputs.entrySet()) {
             checkoutPage.inputData(pair.getKey(), pair.getValue());
         }
 
-
         checkoutPage.selectDataOption("BillingNewAddress_CountryId", configProperties.country());
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
         checkoutPage.selectDataOption("BillingNewAddress_StateProvinceId", configProperties.state());
 
         checkoutPage.clickOnNewAddressContinueButton();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        checkoutPage.clickOnShippingMethodContinueButton();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        checkoutPage.clickOnCheckMoneyOrder();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        checkoutPage.clickOnPaymentMethodContinueButton();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        checkoutPage.clickOnPaymentInfoContinueButton();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        checkoutPage.clickOnConfirmOrderButton();
 
-//        Assert.assertTrue();
+        checkoutPage.clickOnShippingMethodContinueButton();
+
+        checkoutPage.clickOnCheckMoneyOrder();
+
+        checkoutPage.clickOnPaymentMethodContinueButton();
+
+        checkoutPage.clickOnPaymentInfoContinueButton();
+
+        checkoutPage.clickOnConfirmOrderButton();
     }
 }
